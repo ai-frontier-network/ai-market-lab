@@ -3,5 +3,16 @@
     "url": "https://www.cnbc.com/2026/05/30/oil-exports-through-hormuz-might-not-return-to-levels-before-iran-war.html",
     "processed_at": "2026-05-31T07:17:54.658452",
     "status": "published"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/05/30/iran-war-inequality-affordability-ceasefire-analysis.html",
+    "processed_at": "2026-05-31T07:54:59.771237",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/05/30/spacex-ipo-invest.html",
+    "processed_at": "2026-05-31T07:55:18.130228",
+    "status": "published"
   }
 ]
