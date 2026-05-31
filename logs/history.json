@@ -14,5 +14,16 @@
     "url": "https://www.cnbc.com/2026/05/30/spacex-ipo-invest.html",
     "processed_at": "2026-05-31T07:55:18.130228",
     "status": "published"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/05/31/japan-seeks-dialog-rejects-neo-militarism-label-defense-minister.html",
+    "processed_at": "2026-05-31T08:23:18.458176",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/05/30/meta-struggled-selling-anything-other-than-ads-will-ai-be-different.html",
+    "processed_at": "2026-05-31T08:23:42.536775",
+    "status": "published"
   }
 ]
