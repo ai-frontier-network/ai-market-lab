@@ -184,6 +184,21 @@ a:hover { text-decoration: underline; }
 .hidden { opacity: 0; transform: translateY(30px); transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
 .show { opacity: 1; transform: translateY(0); }
 
+
+
+/* --- プチ書籍（Weekly Book）の章ごとの美しい余白設定 --- */
+.book-content-body h3 { 
+    margin-top: 50px; 
+    margin-bottom: 20px; 
+    border-bottom: 1.5px solid var(--border-color); 
+    padding-bottom: 8px; 
+}
+.book-content-body p { 
+    margin-bottom: 25px; 
+}
+
+
+
 @media (max-width: 768px) {
     .header-left { flex-direction: column; align-items: flex-start; gap: 15px; }
     .post-title { font-size: 1.8rem; }
