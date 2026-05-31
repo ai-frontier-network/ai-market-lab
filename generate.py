@@ -31,7 +31,7 @@ logging.basicConfig(
 
 MAX_ARTICLES_LIMIT = 30
 MAX_HISTORY_LIMIT = 5000
-TEMPLATE_VERSION = "2.0.0"
+TEMPLATE_VERSION = "2.1.0"
 
 # ==========================================
 # 2. Pydanticスキーマ定義
@@ -40,7 +40,7 @@ class ArticleOutputSchema(BaseModel):
     title: str = Field(description="日本語のキャッチーな株・経済タイトル。〜が急騰、〜に懸念、など動きや結論が分かる35文字以内。")
     summary_1: str = Field(description="3行結論の1つ目。客観的な事実のみで記述。体言止めで30文字以内。")
     summary_2: str = Field(description="3行結論の2つ目。客観的な事実のみで記述。体言止めで30文字以内。")
-    summary_3: str = Field(description="3行結論の3つ目。客観的な事実のみで記述。体言止めで30文字以内。")
+    summary_3: str = Field(description="3行結論の3つ目。客観的な事実のみで記述. 体言止めで30文字以内。")
     summary_detail: str = Field(
         description="""
         500〜700文字程度。
@@ -81,9 +81,9 @@ def get_shikiho_context(article_text: str) -> str:
                 matched_info.append(f"【企業名: {value['name']} ({value['code']})】\n{value['shikiho_summary']}")
         
         if matched_info:
-            return "\n\n=== 関連する企業の四季報プロファイル（参考材料として必ず分析に組み込んでください） ===\n" + "\n\n".join(matched_info)
+            return "\n\n=== 関連する企業の四季報プロファイル ===\n" + "\n\n".join(matched_info)
     except Exception as e:
-        logging.error(f"四季報データの読み込み・突合に失敗しました: {e}")
+        logging.error(f"四季報データの読み込み・突合失敗: {e}")
     return ""
 
 # ==========================================
@@ -157,7 +157,6 @@ def fetch_full_article_text(url: str) -> str:
         with urllib.request.urlopen(req, timeout=15) as response:
             html_content = response.read().decode('utf-8', errors='ignore')
         
-        # 不要な要素のクレンジング
         html_content = re.sub(r'<script[\s\S]*?>[\s\S]*?</script>', '', html_content)
         html_content = re.sub(r'<style[\s\S]*?>[\s\S]*?</style>', '', html_content)
         html_content = re.sub(r'<header[\s\S]*?>[\s\S]*?</header>', '', html_content)
@@ -176,7 +175,7 @@ def fetch_full_article_text(url: str) -> str:
         return ""
 
 # ==========================================
-# 6. コア：AI要約（四季報連携 & gemini-2.5-flash固定）
+# 6. コア：AI要約
 # ==========================================
 def run_article_generator(source_text: str, source_url: str, source_name: str) -> str:
     MAX_INPUT_LENGTH = 12000
@@ -187,22 +186,21 @@ def run_article_generator(source_text: str, source_url: str, source_name: str) -
         logging.error("GEMINI_API_KEY が設定されていません。")
         return ""
 
-    # 四季報データの突合
     shikiho_context = get_shikiho_context(safe_source_text)
 
     client = genai.Client(api_key=api_key)
-    model_name = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")  # 100%モデル固定
+    model_name = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
 
     prompt = f"""
     あなたは、「経済・投資・株式の難解な仕組み」を初心者に日本一わかりやすく噛み砕いて解説する、最高峰の投資ニュース編集者です。
-    提供された【海外経済ニュース】と、付随する【企業四季報プロファイル】を厳密にマージ（クロス分析）し、以下の【ルール】に沿って詳細に要約・解説してください。
+    提供された【海外経済ニュース】と、付随する【企業四季報プロファイル】を厳密にマージし、以下の【ルール】に沿って詳細に要約・解説してください。
 
     【ルール】
-    - 専門用語（金利影響、ポートフォリオ、サプライチェーン等）を極限まで噛み砕き、中学生でも情景が浮かぶ平易な日本語にしてください。
+    - 専門用語を極限まで噛み砕き、中学生でも情景が浮かぶ平易な日本語にしてください。
     - 誇張を排し、信頼できる客観的な事実に基づきつつ、断定しすぎない知的なトーンを保ってください。
-    - 四季報データ（参考情報）がある場合、その企業の現在の「強み」「弱み」「将来性」を必ず解説に織り交ぜて日本株・米国株の投資家にとって有益な視点を提供してください。
+    - 四季報データがある場合、その企業の「強み」「弱み」「将来性」を必ず解説に織り交ぜて日本株・米国株の投資家にとって有益な視点を提供してください。
     - summary_detailは、元記事（英語）の具体的なデータ、数値、固有名詞、重要な一節を適切に「引用」しながら、500〜700文字程度で非常に詳しく詳細に論理的に説明してください。
-    - explanation_fullは、必ず「たとえば〜」から始まる誰もがイメージしやすい比喩を深く掘り下げ、300〜500文字程度で、文章が短くならないよう具体例を多く記述してください。
+    - explanation_fullは、必ず「たとえば〜」から始まる比喩を深く掘り下げ、300〜500文字程度で、文章が短くならないよう具体例を多く記述してください。
     - slugはアルファベット小文字とハイフンのみで指定してください。
 
     【海外経済ニュース】
@@ -368,7 +366,44 @@ def build_page(body_template_path, title, date_iso, date_ja, source_url, source_
         logging.error(f"build_page 実行エラー ({output_path}): {e}")
 
 # ==========================================
-# 8. 再ビルド（SSGコンパイル & ローテーション）
+# 🆕 8. 最新のプチ書籍を検出し、トップページ用バナーHTMLを作成する関数
+# ==========================================
+def get_weekly_book_banner_html() -> str:
+    """books/ フォルダ内を探索し、最新のプチ書籍があれば美しい紹介バナーHTMLを返却。
+    書籍がまだ存在しない場合は、デグレ防止として完全に「空文字」を返却する。
+    """
+    if not os.path.exists("books"):
+        return ""
+    
+    book_files = [f for f in os.listdir("books") if f.endswith(".html")]
+    if not book_files:
+        return ""
+    
+    # ファイルの最終更新日時が最も新しいものを特定
+    book_files.sort(key=lambda x: os.path.getmtime(os.path.join("books", x)), reverse=True)
+    latest_book_file = book_files[0]
+    
+    # ファイル名からスラグを抽出 (例: weekly-market-book-2026-05-w22.html -> weekly-market-book-2026-05-w22)
+    book_slug = os.path.splitext(latest_book_file)[0]
+    
+    # 簡易的にタイトルをファイル更新時から作成（またはファイル内から抽出する代わりにスマートに決定）
+    display_title = f"{datetime.now().strftime('%Y年%m月')} 最新号：世界経済トレンド完全解剖書"
+    
+    # 1号店のデザインを破壊しない、完璧にスタイリッシュなインラインバナーカード
+    banner_html = f"""
+    <section class="weekly-book-banner fade-element" style="margin-bottom: 40px;">
+        <div style="background: linear-gradient(135deg, #0070f3, #3291ff); color: white; padding: 30px; border-radius: 16px; box-shadow: 0 8px 24px rgba(0, 112, 243, 0.15); text-align: center;">
+            <span style="background: rgba(255, 255, 255, 0.2); padding: 4px 12px; border-radius: 999px; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.05em;">🆕 AI WEEKLY BOOK 配信中</span>
+            <h2 style="font-size: 1.6rem; font-weight: 800; margin: 15px 0 10px; color: white;">{display_title}</h2>
+            <p style="font-size: 0.95rem; color: rgba(255, 255, 255, 0.9); max-width: 500px; margin: 0 auto 20px; line-height: 1.6;">今週配信された複数の株式・マクロ経済ニュースをAIが体系的に統合・分析。一冊のストーリーで世界の潮流を完全に見渡せる特別レポートです。</p>
+            <a href="books/{book_slug}.html" class="toggle-button" style="background: white; color: #0070f3; border: none; font-weight: 800; margin-top: 0; display: inline-block;">電子書籍を読む（無料） &rarr;</a>
+        </div>
+    </section>
+    """
+    return banner_html
+
+# ==========================================
+# 9. 再ビルド（SSGコンパイル & ローテーション）
 # ==========================================
 def rebuild_index_and_rotate_storage():
     try:
@@ -387,7 +422,6 @@ def rebuild_index_and_rotate_storage():
 
         all_articles.sort(key=lambda x: x[0], reverse=True)
 
-        # 上限数ローテーション処理
         if len(all_articles) > MAX_ARTICLES_LIMIT:
             logging.info("記事上限超過のため、古いデータをローテーション自動削除します。")
             to_delete = all_articles[MAX_ARTICLES_LIMIT:]
@@ -405,7 +439,7 @@ def rebuild_index_and_rotate_storage():
             logging.info("データフォルダが空のため、一覧の更新を保留します。")
             return
 
-        # すべての個別記事を再コンパイル（レイアウト崩れ等のデグレ防止）
+        # すべての個別記事を再コンパイル
         for mtime, art in all_articles:
             a_slug = sanitize_slug(art["slug"])
             a_date_ja = datetime.fromtimestamp(mtime).strftime("%Y年%m月%d日 %H:%M")
@@ -437,7 +471,6 @@ def rebuild_index_and_rotate_storage():
         hero_date_ja = datetime.now().strftime("%Y年%m月%d日 %H:%M")
         hero_date_iso = datetime.now().strftime("%Y-%m-%dT%H:%M:%S+09:00")
 
-        # 関連記事（2番目以降）のHTML組み立て
         grid_articles = all_articles[1:]
         articles_html = ""
         for _, art in grid_articles:
@@ -457,6 +490,9 @@ def rebuild_index_and_rotate_storage():
                 </article>
             """
 
+        # プチ書籍用バナーHTMLを取得（なければ自動で空文字になります）
+        weekly_book_banner = get_weekly_book_banner_html()
+
         # index.htmlのビルド
         build_page(
             body_template_path="template_index.html",
@@ -474,7 +510,8 @@ def rebuild_index_and_rotate_storage():
                 "{{EXPLANATION_FULL}}": hero_art["explanation_full"],
                 "{{ACTION_1}}": hero_art["action_1"],
                 "{{ACTION_2}}": hero_art["action_2"],
-                "{{ARTICLES_GRID}}": articles_html
+                "{{ARTICLES_GRID}}": articles_html,
+                "{{WEEKLY_BOOK_BANNER}}": weekly_book_banner  # 🆕 プレースホルダーに差し込み
             },
             output_path="index.html",
             is_article=False
@@ -514,6 +551,8 @@ def rebuild_index_and_rotate_storage():
             hero_pattern = re.compile(r"<article class=\"post fade-element\">.*?</article>", re.DOTALL)
             archive_content = hero_pattern.sub(archive_hero_header_html, archive_content)
             archive_content = archive_content.replace(articles_html, archive_articles_html)
+            # アーカイブページでは上部のプチ書籍バナーを非表示にしてスッキリさせます
+            archive_content = archive_content.replace(weekly_book_banner, "")
             archive_content = archive_content.replace(f"<title>{html.escape(hero_art['title'])} | AI Frontier Market</title>", "<title>過去のマーケット記事一覧 | AI Frontier Market</title>")
 
             tmp_archive_path = "archive.html.tmp"
@@ -527,7 +566,7 @@ def rebuild_index_and_rotate_storage():
         logging.error(f"再ビルド中に重大なエラーが発生しました: {e}")
 
 # ==========================================
-# 🆕 【2号店新規機能】週刊AIプチ書籍の自動統合メソッド (Deep Analysis)
+# 🆕 【2号店新規機能】週刊AIプチ書籍の自動統合メソッド
 # ==========================================
 def generate_weekly_book():
     """過去の個別ニュースJSONを統合し、Geminiの100万コンテキスト窓を活かして、
@@ -536,8 +575,10 @@ def generate_weekly_book():
     logging.info("=== 週刊AIプチ書籍の自動生成プロセスを開始します ===")
     try:
         json_files = [f for f in os.listdir("data") if f.endswith(".json") and f != "shikiho_master.json"]
-        if len(json_files) < 5:
-            logging.info("記事データが不足しているため、今週の書籍生成をスキップします（最低5記事以上必要）。")
+        
+        # 🧪 【テスト用緩和措置】今すぐ動作を確認できるよう、記事が1つ以上あれば強制生成します。
+        if len(json_files) < 1:
+            logging.info("記事データが不足しているため、今週の書籍生成をスキップします（最低1記事以上必要）。")
             return
 
         combined_materials = []
@@ -567,7 +608,7 @@ def generate_weekly_book():
         第5章：賢い投資家たちが今静かに仕込んでいること（実用投資アクション）
 
         【執筆上の厳格ルール】
-        - 専門用語を絶対にそのまま放置せず、必ず誰もが膝を打つような「具体的な例え話」で噛み砕いてください。
+        - 専門用語を絶対にそのまま放置せず、必ず誰もが膝を打つような「具体的な例え話」で完璧に噛み砕いてください。
         - ニュースの羅列にせず、それぞれの出来事が「どう繋がっているのか」という伏線と因果関係をドラマチックに描いてください。
         - 出力は美しいHTML形式で（h3, p, strong, blockquote等のタグを適切に使用して）書き出してください。Markdownタグや```htmlといったラッパーは出力に含めず、純粋なHTMLタグ本文のみを出力してください。
 
@@ -583,10 +624,9 @@ def generate_weekly_book():
 
         if response and response.text:
             book_html_content = response.text.strip()
-            # ラッパー文字の安全なクレンジング
             book_html_content = re.sub(r"^```html\s*|\s*```$", "", book_html_content, flags=re.IGNORECASE).strip()
             
-            book_title = f"{datetime.now().strftime('%Y年%m月')}第{ (datetime.now().day - 1) // 7 + 1 }週：世界経済トレンド完全解剖書"
+            book_title = f"{datetime.now().strftime('%Y年%m月')} 最新号：世界経済トレンド完全解剖書"
             book_slug = f"weekly-market-book-{datetime.now().strftime('%Y-%m-w%W')}"
             
             build_page(
@@ -609,10 +649,9 @@ def generate_weekly_book():
         logging.error(f"週刊プチ書籍生成中にエラーが発生しました: {e}")
 
 # ==========================================
-# 9. オーケストレーター
+# 10. オーケストレーター
 # ==========================================
 def main():
-    # 2号店用・最強の経済・市場RSSフィード監視リスト
     RSS_FEEDS = [
         {"url": "https://www.reutersagency.com/feed/?best-topics=business-finance&post_type=best", "name": "Reuters Business"},
         {"url": "https://www.cnbc.com/id/100003114/device/rss/rss.html", "name": "CNBC Markets"},
@@ -625,7 +664,6 @@ def main():
 
     new_article_created = False
     
-    # フォルダが空なら初期用のテストデモデータを自動生成
     data_files = [f for f in os.listdir("data") if f.endswith(".json") and f != "shikiho_master.json"]
     if not data_files:
         logging.info("データが空のため、2号店最初のデモデータを生成します。")
@@ -677,7 +715,6 @@ def main():
 
             full_text = fetch_full_article_text(item["link"])
             
-            # ペイウォール対策としてのフォールバック処理（FTなどに極めて有効！）
             if full_text:
                 source_material = full_text
             else:
@@ -702,12 +739,13 @@ def main():
 
     save_history(history)
     
-    # 記事が更新されたら、SSG再構築
+    # 記事が更新されたら、SSG再構築 ＆ プチ書籍生成
     if new_article_created:
-        rebuild_index_and_rotate_storage()
-        
-        # 週1回のプチ書籍生成（※デモ運用のため、記事更新時に自動チェックを行い生成）
+        # 1. まずプチ書籍（Weekly Book）を先に生成し、実体ファイル(books/xxx.html)を作っておきます。
         generate_weekly_book()
+        
+        # 2. その後でindex.htmlを再構築します。これにより、インデックス作成時に上記の書籍HTMLが検知され、バナーが埋め込まれます。
+        rebuild_index_and_rotate_storage()
 
 if __name__ == "__main__":
     main()
