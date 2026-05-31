@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- Google tag (gtag.js) (GA4：2号店用の測定コード) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GZF5D3TRFF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GZF5D3TRFF');
+    </script>
+    
+    <meta name="description" content="{{EXPLANATION_INTRO}}">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>{{TITLE}} | AI Frontier Market</title>
+    <link rel="stylesheet" href="{{CSS_PATH}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+       
+    <!-- 構造化データ（JSON-LD）自動挿入エリア -->
+    {{STRUCTURED_DATA}}
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="header-left">
+                <h1 class="site-title"><a href="/index.html">AI Frontier Market</a></h1>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="/index.html">Latest</a></li>
+                        <li><a href="/archive.html">Archive</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <button id="theme-toggle" aria-label="テーマ切り替え">
+                <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- 各ページ（Indexや個別記事、プチ書籍）の中身が全自動でガッチャンコされます -->
+        {{BODY_CONTENT}}
+    </main>
+
+    <footer class="site-footer fade-element">
+        <div class="container">
+            <p>&copy; 2026 AI Frontier Market. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="{{JS_PATH}}"></script>
+</body>
+</html>
