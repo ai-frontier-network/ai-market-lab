@@ -1,0 +1,64 @@
+name: AI Article & Book Generator
+
+on:
+  schedule:
+    - cron: '0 0,12 * * *'  # 毎日日本時間の朝9時と夜9時（UTC 0,12）に自動起動
+  workflow_dispatch:        # 手動起動用のトリガー
+
+concurrency:
+  group: ai-market-generator
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write 
+
+    steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v4
+
+      - name: Pythonのセットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 依存パッケージのインストール
+        run: pip install google-genai pydantic
+
+      - name: ファイルの事前バックアップ
+        run: |
+          cp index.html backup-index.html || true
+          cp archive.html backup-archive.html || true
+
+      - name: 記事・プチ書籍の全自動生成
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}  
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL_NAME }} 
+        run: python generate.py
+
+      - name: 生成ファイルの自動検証（スモークテスト）
+        run: |
+          test -f index.html || { echo "Error: index.html missing"; exit 1; }
+          test -f archive.html || { echo "Error: archive.html missing"; exit 1; }
+          test -f style.css || { echo "Error: style.css missing"; exit 1; }
+          [ -s index.html ] || { echo "Error: index.html is empty"; exit 1; }
+          [ -s archive.html ] || { echo "Error: archive.html is empty"; exit 1; }
+          echo "Smoke test passed successfully! 🎉"
+
+      - name: 生成されたファイルを自動コミット＆プッシュ
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add articles/ data/ books/ index.html archive.html logs/history.json || true
+          git diff --staged --quiet || git commit -m "🤖 Auto: AIニュース＆週刊プチ書籍を全自動更新（2号店仕様）"  
+          git push
+
+      - name: ログをアーティファクトとして保存
+        if: always()  
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-log-${{ github.run_id }}
+          path: logs/app.log
+          retention-days: 30
