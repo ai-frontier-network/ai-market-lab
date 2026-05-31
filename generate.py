@@ -577,7 +577,7 @@ def generate_weekly_book():
         json_files = [f for f in os.listdir("data") if f.endswith(".json") and f != "shikiho_master.json"]
         
         # 🧪 【テスト用緩和措置】今すぐ動作を確認できるよう、記事が1つ以上あれば強制生成します。
-        if len(json_files) < 1:
+        if len(json_files) < 5:
             logging.info("記事データが不足しているため、今週の書籍生成をスキップします（最低1記事以上必要）。")
             return
 
