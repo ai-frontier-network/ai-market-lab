@@ -1,0 +1,28 @@
+<article class="post fade-element">
+    <div class="post-meta">
+        <time datetime="{{DATE_ISO}}">{{DATE_JA}}配信</time>
+        <span class="tag" style="background-color: var(--accent-color); color: white; padding: 4px 10px; border-radius: 999px;">AI Weekly Book</span>
+        <span class="source-link">発行元: AI Frontier Market 編集部</span>
+    </div>
+    
+    <h2 class="post-title">{{TITLE}}</h2>
+
+    <!-- プチ書籍：メイン解説（Markdownパース結果などがここに差し込まれます） -->
+    <section class="content-section" style="line-height: 2.0; font-size: 1.1rem;">
+        {{BOOK_CONTENT}}
+    </section>
+
+</article>
+
+    <!-- Google AdSense 広告ユニット（書籍末尾に配置） -->
+    <div class="adsense-container" style="text-align: center; margin: 50px 0; min-height: 250px;">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2908004621823900" crossorigin="anonymous"></script>
+        <!-- 300×250 -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:300px;height:250px"
+             data-ad-client="ca-pub-2908004621823900"
+             data-ad-slot="3799886389"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
