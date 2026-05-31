@@ -1,0 +1,108 @@
+<!-- メイン記事 (全自動コンパイル置換対象) -->
+<article class="post fade-element">
+    <div class="post-meta">
+        <time datetime="{{DATE_ISO}}">{{DATE_JA}}</time>
+        <span class="tag">最新マーケット情報</span>
+        <a href="{{SOURCE_URL}}" class="source-link" target="_blank" rel="noopener">情報ソース: {{SOURCE_NAME}}</a>
+    </div>
+    
+    <h2 class="post-title">{{TITLE}}</h2>
+
+    <!-- 第一層：3行まとめ（結論 ＆ 詳細展開） -->
+    <section class="summary-card">
+        <h3>📌 3行まとめ（市場への結論）</h3>
+        <ul>
+            <li>{{SUMMARY_1}}</li>
+            <li>{{SUMMARY_2}}</li>
+            <li>{{SUMMARY_3}}</li>
+        </ul>
+        <button class="toggle-button text-toggle" data-close-text="🔍 3行まとめのさらに詳しい解説を読む" data-open-text="▲ 詳しい解説を閉じる">🔍 3行まとめのさらに詳しい解説を読む</button>
+        <div class="toggle-content">
+            <div class="summary-detail">
+                <h3>市場に与える影響の詳しい解説</h3>
+                <p>{{SUMMARY_DETAIL}}</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google AdSense 広告ユニット -->
+    <div class="adsense-container" style="text-align: center; margin: 40px 0; min-height: 250px;">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2908004621823900" crossorigin="anonymous"></script>
+        <!-- 300×250 -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:300px;height:250px"
+             data-ad-client="ca-pub-2908004621823900"
+             data-ad-slot="3799886389"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <!-- 第二層：初心者向け解説（展開式） -->
+    <section class="content-section">
+        <h3>💡 つまり、どういうこと？<br>（初心者向け市場解説）</h3>
+        <p>{{EXPLANATION_INTRO}}</p>
+        <button class="toggle-button" data-close-text="📖 つまり？ の続きを詳しく読む" data-open-text="▲ 閉じる">📖 つまり？ の続きを詳しく読む</button>
+        <div class="toggle-content">
+            <p>{{EXPLANATION_FULL}}</p>
+        </div>
+    </section>
+
+    <!-- 第三層：実用アクション -->
+    <section class="action-section">
+        <h3>🚀 あなたはどう活かすべき？<br>（投資・実用アクション）</h3>
+        <div class="action-box">
+            <h3>投資判断への影響とおすすめ</h3>
+            <ul>
+                <li>{{ACTION_1}}</li>
+                <li>{{ACTION_2}}</li>
+            </ul>
+        </div>
+    </section>
+</article>
+
+    <!-- Google AdSense 広告ユニット -->
+    <div class="adsense-container" style="text-align: center; margin: 40px 0; min-height: 250px;">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2908004621823900" crossorigin="anonymous"></script>
+        <!-- 300×250 -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:300px;height:250px"
+             data-ad-client="ca-pub-2908004621823900"
+             data-ad-slot="3799886389"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+<!-- 関連記事カードセクション (最新記事一覧) -->
+<section class="articles-grid fade-element">
+    <h3 class="grid-title">最新のマーケットニュース一覧</h3>
+    <div class="grid-container">
+        <!-- 🔴 ここに2番目以降の経済ニュース一覧が自動で差し込まれます -->
+        {{ARTICLES_GRID}}
+    </div>
+</section>
+
+<!-- 初心者向けセクション -->
+<section class="beginner-section fade-element" id="beginner">
+    <div class="beginner-box">
+        <span class="section-mini">BEGINNER GUIDE</span>
+        <h2>AI初心者でも、<br>経済と未来に置いていかれないために。</h2>
+        <p>難解な世界情勢や、日々変動する経済指標の意味などを、中学生にも分かる優しい言葉でシンプルに解決します。</p>
+        <button class="toggle-button primary-button" data-close-text="📖 経済初心者ガイドを見る" data-open-text="▲ ガイドを閉じる">📖 経済初心者ガイドを見る</button>
+        <div class="toggle-content beginner-guide-content">
+            <div class="qna-item">
+                <h3>Q. 金利（利上げ・利下げ）が上がると、株価はどうなるの？</h3>
+                <p>一般的に、金利が上がると銀行からお金を借りにくくなるため、企業の活動が少し控えめになり、株価は下がりやすくなります。逆に金利が下がると、お金が借りやすくなって経済が活発化し、株価は上がりやすくなります。</p>
+            </div>
+            <div class="qna-item">
+                <h3>Q. インフレ（物価上昇）とは？</h3>
+                <p>モノの価値が上がり、お金の価値が下がることです。ゆるやかなインフレは経済の元気な証拠ですが、急激すぎるインフレは生活を苦しくするため、国は金利を上げてブレーキをかけようとします。</p>
+            </div>
+            <div class="qna-item">
+                <h3>Q. 四季報（しきほう）ってなに？</h3>
+                <p>日本全国のすべての株式上場企業について、業績や将来の予測、直近の課題などがぎっしり詰まった「企業のカルテ」のような本です。これを知ることで、企業の健康状態を見抜くことができます。</p>
+            </div>
+        </div>
+    </div>
+</section>
