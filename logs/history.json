@@ -75,5 +75,16 @@
     "url": "https://www.cnbc.com/2026/06/04/softbank-openai-liquidity-crunch-arm-son.html",
     "processed_at": "2026-06-04T03:40:06.025034",
     "status": "published"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/06/04/chipmaker-equities-micron-marvell-broadcom-intel.html",
+    "processed_at": "2026-06-04T14:51:54.067207",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/06/04/blackstone-caps-withdrawals-private-credit.html",
+    "processed_at": "2026-06-04T14:52:21.312896",
+    "status": "published"
   }
 ]
