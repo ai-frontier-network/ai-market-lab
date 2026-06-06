@@ -2,7 +2,7 @@ name: AI Article & Book Generator
 
 on:
   schedule:
-    - cron: '0 0,12 * * *'  # 毎日日本時間の朝9時と夜9時（UTC 0,12）に自動起動
+    - cron: '0 0 * * *'  # 毎日日本時間の朝9時と夜9時（UTC 0,12）に自動起動
   workflow_dispatch:        # 手動起動用のトリガー
 
 concurrency:
