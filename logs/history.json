@@ -101,5 +101,41 @@
     "url": "https://www.cnbc.com/2026/06/05/meta-stock-sinks-on-report-company-could-raise-tens-of-billions-for-ai.html",
     "processed_at": "2026-06-06T02:48:47.085888",
     "status": "published"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/06/05/marvell-technology-flex-sp-500-campbells-pool.html",
+    "processed_at": "2026-06-07T03:49:27.117470",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/06/05/hot-jobs-report-puts-fed-cuts-further-out-of-reach-as-chair-warsh-faces-policy-tests.html",
+    "processed_at": "2026-06-07T03:50:15.429319",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/b6cac184-75a4-47ab-94c5-5eb8c92cd407",
+    "processed_at": "2026-06-07T03:51:36.015344",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/20449d8d-90e4-461c-b3de-f9f30fcd474d",
+    "processed_at": "2026-06-07T03:51:51.005839",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/7e5cfed4-dd91-435d-914a-677f97822724",
+    "processed_at": "2026-06-07T03:51:51.005873",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/0b82963a-0225-484f-8b94-012c85c362d5",
+    "processed_at": "2026-06-07T03:51:51.005893",
+    "status": "skipped",
+    "reason": "description_too_short"
   }
 ]
