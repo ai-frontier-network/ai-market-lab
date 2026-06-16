@@ -177,5 +177,16 @@
     "url": "https://www.cnbc.com/2026/06/14/us-iran-war-peace-deal.html",
     "processed_at": "2026-06-15T04:10:31.374289",
     "status": "published"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/06/15/spacex-stock-record-ipo-debut.html",
+    "processed_at": "2026-06-16T03:59:39.403258",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/06/15/gavin-newsom-trump-doj-investigation-california.html",
+    "processed_at": "2026-06-16T03:59:52.938519",
+    "status": "published"
   }
 ]
