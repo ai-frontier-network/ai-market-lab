@@ -263,5 +263,16 @@
     "url": "https://www.cnbc.com/2026/06/30/trump-financial-disclosure-released.html",
     "processed_at": "2026-07-01T03:42:41.292227",
     "status": "published"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/02/samsung-sk-hynix-shares-slide-kospi-tech-selloff-nasdaq.html",
+    "processed_at": "2026-07-02T03:28:02.514723",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/01/trump-usmca-canada-mexico-trade-treaty.html",
+    "processed_at": "2026-07-02T03:28:13.147476",
+    "status": "published"
   }
 ]
