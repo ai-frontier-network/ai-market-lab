@@ -359,5 +359,16 @@
     "url": "https://www.cnbc.com/2026/07/18/us-military-says-it-completed-latest-round-of-strikes-against-iran.html",
     "processed_at": "2026-07-19T02:34:41.611748",
     "status": "published"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/20/oil-prices-today-brent-wti-crude-us-iran-centcom-hormuz.html",
+    "processed_at": "2026-07-20T02:49:24.175508",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/20/us-iran-strait-of-hormuz-hostilities-casualties-.html",
+    "processed_at": "2026-07-20T02:49:44.220070",
+    "status": "published"
   }
 ]
