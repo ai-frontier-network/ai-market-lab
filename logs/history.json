@@ -375,5 +375,16 @@
     "url": "https://www.cnbc.com/2026/07/21/china-philippines-south-china-sea-disputes-sailor-injured-.html",
     "processed_at": "2026-07-21T02:32:47.074235",
     "status": "published"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/22/trump-generic-drugs-tariffs-medicine-trade-.html",
+    "processed_at": "2026-07-22T02:30:59.606846",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/21/super-micro-stock-spacex-announcement.html",
+    "processed_at": "2026-07-22T02:31:13.953665",
+    "status": "published"
   }
 ]
