@@ -426,5 +426,22 @@
     "url": "https://www.cnbc.com/2026/07/29/zuckerberg-metas-ai-capacity-dilemma-what-to-sell-vs-what-to-keep.html",
     "processed_at": "2026-07-30T02:12:27.422271",
     "status": "published"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/30/amazon-amzn-q2-earnings-report-2026.html",
+    "processed_at": "2026-07-31T02:40:28.763235",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/30/china-us-exports-drop.html",
+    "processed_at": "2026-07-31T02:40:28.763278",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/07/30/tim-cook-sees-apples-hybrid-ai-strategy-as-a-competitive-weapon-.html",
+    "processed_at": "2026-07-31T02:40:50.940292",
+    "status": "published"
   }
 ]
