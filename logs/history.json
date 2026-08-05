@@ -463,5 +463,16 @@
     "url": "https://www.cnbc.com/2026/08/03/palantir-pltr-earnings-q2-2026.html",
     "processed_at": "2026-08-04T02:23:57.786013",
     "status": "published"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/08/05/us-iran-war-trump-hormuz-bessent-iran-deal-close.html",
+    "processed_at": "2026-08-05T02:23:22.858508",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/08/05/softbank-samsung-sk-hynix-samsung-tech-rally.html",
+    "processed_at": "2026-08-05T02:23:45.649611",
+    "status": "published"
   }
 ]
