@@ -509,5 +509,16 @@
     "url": "https://www.cnbc.com/2026/08/11/coreweave-crwv-q2-earnings-report-2026.html",
     "processed_at": "2026-08-12T01:48:11.834471",
     "status": "published"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/08/13/south-korea-kospi-bull-market-sk-hynix-samsung-ai-trade.html",
+    "processed_at": "2026-08-13T01:50:07.815983",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/08/12/us-budget-deficit-surged-in-july-to-highest-level-since-march-2021.html",
+    "processed_at": "2026-08-13T01:51:59.758293",
+    "status": "published"
   }
 ]
