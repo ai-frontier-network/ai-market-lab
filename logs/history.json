@@ -535,5 +535,16 @@
     "url": "https://www.cnbc.com/2026/08/15/strategic-petroleum-reserve-spr-oil-iran-war-caverns.html",
     "processed_at": "2026-08-16T01:11:27.703489",
     "status": "published"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/08/17/japan-gdp-misses-estimates-trade-exports-yen-nikkei.html",
+    "processed_at": "2026-08-17T01:08:49.773254",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/08/16/top-us-commander-acknowledges-mental-health-issues-on-uss-lincoln.html",
+    "processed_at": "2026-08-17T01:09:10.605788",
+    "status": "published"
   }
 ]
