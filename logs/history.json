@@ -546,5 +546,16 @@
     "url": "https://www.cnbc.com/2026/08/16/top-us-commander-acknowledges-mental-health-issues-on-uss-lincoln.html",
     "processed_at": "2026-08-17T01:09:10.605788",
     "status": "published"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/08/17/treasury-yields-federal-reserve-fomc-minutes.html",
+    "processed_at": "2026-08-18T01:06:54.979024",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/08/17/us-iran-war-trump-hormuz.html",
+    "processed_at": "2026-08-18T01:07:15.402595",
+    "status": "published"
   }
 ]
