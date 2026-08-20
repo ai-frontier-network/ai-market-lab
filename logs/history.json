@@ -562,5 +562,16 @@
     "url": "https://www.cnbc.com/2026/08/18/us-iran-war-trump-hormuz-trump-ceasefire-expires-extension-.html",
     "processed_at": "2026-08-19T01:08:04.084473",
     "status": "published"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/08/19/us-government-debt-passes-40-trillion-mark-for-the-first-time.html",
+    "processed_at": "2026-08-20T01:07:05.914742",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/08/19/bessent-treasury-buybacks-yields-warsh-fed.html",
+    "processed_at": "2026-08-20T01:07:28.104262",
+    "status": "published"
   }
 ]
