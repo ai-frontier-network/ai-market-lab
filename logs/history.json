@@ -588,5 +588,16 @@
     "url": "https://www.cnbc.com/2026/08/22/coca-cola-innovation-labs-dirty-sodas-refreshers.html",
     "processed_at": "2026-08-23T01:13:22.056634",
     "status": "published"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/08/23/treasury-secretary-bessent-iran-sanctions-press-conference.html",
+    "processed_at": "2026-08-24T01:10:33.892366",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/08/24/oil-price-today-wti-brent-us-sanctions-iran.html",
+    "processed_at": "2026-08-24T01:10:52.524509",
+    "status": "published"
   }
 ]
