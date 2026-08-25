@@ -599,5 +599,10 @@
     "url": "https://www.cnbc.com/2026/08/24/oil-price-today-wti-brent-us-sanctions-iran.html",
     "processed_at": "2026-08-24T01:10:52.524509",
     "status": "published"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/08/24/trump-iran-economy-sanctions-china-bessent.html",
+    "processed_at": "2026-08-25T01:09:07.283552",
+    "status": "published"
   }
 ]
