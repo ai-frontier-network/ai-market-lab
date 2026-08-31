@@ -629,5 +629,16 @@
     "url": "https://www.cnbc.com/2026/08/29/k-shaped-economy-c-shaped-e-shape.html",
     "processed_at": "2026-08-30T03:44:33.226288",
     "status": "published"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/08/30/us-iran-strikes-strait-hormuz.html",
+    "processed_at": "2026-08-31T03:45:11.723876",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/08/31/oil-prices-hormuz-iran-larak-island-centcom.html",
+    "processed_at": "2026-08-31T03:45:26.586494",
+    "status": "published"
   }
 ]
