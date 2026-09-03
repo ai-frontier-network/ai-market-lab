@@ -650,5 +650,16 @@
     "url": "https://www.cnbc.com/2026/09/02/us-iran-war-trump-hormuz-irgc-jordan-bahrain.html",
     "processed_at": "2026-09-02T02:57:48.996747",
     "status": "published"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/09/03/us-iran-war-trump-hormuz-israel-middle-east-europe-kuwait.html",
+    "processed_at": "2026-09-03T03:00:24.500949",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/09/02/microsoft-to-disclose-azure-revenue-as-part-of-segment-changes.html",
+    "processed_at": "2026-09-03T03:03:16.916100",
+    "status": "published"
   }
 ]
