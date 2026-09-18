@@ -731,5 +731,16 @@
     "url": "https://www.cnbc.com/2026/09/17/trump-canada-european-union-tariffs-associate-member-ukraine-.html",
     "processed_at": "2026-09-17T03:30:49.977250",
     "status": "published"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/09/18/oil-prices-today-brent-wti-saudi-arabia-houthi.html",
+    "processed_at": "2026-09-18T03:19:49.381798",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/09/17/tax-breaks-trump-big-beautiful-bill.html",
+    "processed_at": "2026-09-18T03:21:13.608340",
+    "status": "published"
   }
 ]
