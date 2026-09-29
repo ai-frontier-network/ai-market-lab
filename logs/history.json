@@ -792,5 +792,10 @@
     "url": "https://www.cnbc.com/2026/09/28/oil-price-today-wti-brent-trump-iran.html",
     "processed_at": "2026-09-28T03:45:23.211148",
     "status": "published"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/09/29/us-iran-war-trump-hormuz-.html",
+    "processed_at": "2026-09-29T04:20:24.720342",
+    "status": "published"
   }
 ]
