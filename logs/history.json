@@ -977,5 +977,77 @@
     "url": "https://www.cnbc.com/2026/11/04/stock-market-rally-trump-midterms.html",
     "processed_at": "2026-11-05T05:12:39.539834",
     "status": "published"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/06/us-iran-war-trump-hormuz-oil-midterms.html",
+    "processed_at": "2026-11-06T05:12:25.646335",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/05/stock-market-selloff-ai-fears.html",
+    "processed_at": "2026-11-06T05:12:25.646378",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/05/tesla-spacex-stocks-fall-after-2026-midterms.html",
+    "processed_at": "2026-11-06T05:12:25.646408",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/05/october-jobs-report-preview.html",
+    "processed_at": "2026-11-06T05:12:25.646434",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/05/jim-cramer-ai-stocks-sell-off.html",
+    "processed_at": "2026-11-06T05:13:20.437462",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/investingclub/2026/11/05/costco-is-taking-aim-at-its-may-record-high-how-it-got-here-and-wheres-going.html",
+    "processed_at": "2026-11-06T05:13:43.373474",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/05/emocratic-midterm-economy.html",
+    "processed_at": "2026-11-06T05:14:07.379170",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/05/wonder-confidential-ipo-filing.html",
+    "processed_at": "2026-11-06T05:14:45.582540",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/7c6ceb4f-d7b1-49ec-9047-0e2e4cd2615c?syn-25a6b1a6=1",
+    "processed_at": "2026-11-06T05:15:10.196036",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/580ab1bf-4e2e-46b8-9178-dbf765645754?syn-25a6b1a6=1",
+    "processed_at": "2026-11-06T05:15:25.102045",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/9e62d62b-a464-42fb-b425-553b2364fa98?syn-25a6b1a6=1",
+    "processed_at": "2026-11-06T05:15:32.539894",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/c8314951-713a-4370-ac7b-89b35e771f7e?syn-25a6b1a6=1",
+    "processed_at": "2026-11-06T05:15:54.761442",
+    "status": "skipped",
+    "reason": "description_too_short"
   }
 ]
