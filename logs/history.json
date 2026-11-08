@@ -1091,5 +1091,35 @@
     "processed_at": "2026-11-07T04:47:28.750929",
     "status": "skipped",
     "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/07/iran-war-midterm-election-oil-price-trump.html",
+    "processed_at": "2026-11-08T04:31:46.350149",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/07/trump-doj-democrats-alleged-threats-slotkin.html",
+    "processed_at": "2026-11-08T04:31:53.875761",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/07/healthcare-stocks-may-face-trouble-due-to-midterm-results.html",
+    "processed_at": "2026-11-08T04:32:31.961558",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/f80ff605-6f6e-4b5d-9fab-20276b78e9b7?syn-25a6b1a6=1",
+    "processed_at": "2026-11-08T04:35:03.882316",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/0fab9ede-4fa1-4f94-b23e-e32f07a6b7df?syn-25a6b1a6=1",
+    "processed_at": "2026-11-08T04:35:18.508525",
+    "status": "skipped",
+    "reason": "description_too_short"
   }
 ]
