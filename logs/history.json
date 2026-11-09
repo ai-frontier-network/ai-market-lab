@@ -1121,5 +1121,41 @@
     "processed_at": "2026-11-08T04:35:18.508525",
     "status": "skipped",
     "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/09/china-wholesale-inflation-rises-consumer.html",
+    "processed_at": "2026-11-09T04:44:10.995868",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/08/frequent-flyer-miles-points-thanksgiving.html",
+    "processed_at": "2026-11-09T04:44:25.795186",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/08/cathie-wood-ai-selloff.html",
+    "processed_at": "2026-11-09T04:44:25.795217",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/investingclub/2026/11/08/here-are-the-2-big-things-were-watching-in-the-stock-market-in-the-week-ahead.html",
+    "processed_at": "2026-11-09T04:45:28.539607",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/c8692ed7-f32b-487f-9efa-3ccd3d144f42?syn-25a6b1a6=1",
+    "processed_at": "2026-11-09T04:46:59.979558",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/2a0bc83c-1c48-451a-a2b6-3371a36fc287?syn-25a6b1a6=1",
+    "processed_at": "2026-11-09T04:47:07.210271",
+    "status": "skipped",
+    "reason": "description_too_short"
   }
 ]
