@@ -1223,5 +1223,65 @@
     "processed_at": "2026-11-10T06:02:29.462381",
     "status": "skipped",
     "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/10/coreweave-crwv-q3-earnings-report-2026.html",
+    "processed_at": "2026-11-11T04:47:44.791275",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/10/us-bonds-treasurys-yields.html",
+    "processed_at": "2026-11-11T04:47:52.226502",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/10/traders-bet-on-a-pop-for-anthropics-historic-ipo.html",
+    "processed_at": "2026-11-11T04:48:37.107833",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/10/us-gas-prices-below-four-dollars.html",
+    "processed_at": "2026-11-11T04:48:44.533161",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/68bcba57-0575-44ee-80f4-2e5ea23a431e?syn-25a6b1a6=1",
+    "processed_at": "2026-11-11T04:50:09.703114",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/66e74f23-e61e-43de-aaf6-c2b61648da50?syn-25a6b1a6=1",
+    "processed_at": "2026-11-11T04:50:17.074697",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/94aa4846-58c6-4c17-b25a-095f122b4809?syn-25a6b1a6=1",
+    "processed_at": "2026-11-11T04:50:24.479064",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/38100c3c-af0d-440b-8350-823c5e8c80d9?syn-25a6b1a6=1",
+    "processed_at": "2026-11-11T04:50:46.597634",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/07bdb58c-4557-4def-b8cb-db9be304fd72?syn-25a6b1a6=1",
+    "processed_at": "2026-11-11T04:50:46.597677",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/d17e5179-59e2-4b8e-9a65-e985b99645df?syn-25a6b1a6=1",
+    "processed_at": "2026-11-11T04:50:46.597706",
+    "status": "skipped",
+    "reason": "description_too_short"
   }
 ]
