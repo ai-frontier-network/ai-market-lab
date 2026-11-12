@@ -1283,5 +1283,53 @@
     "processed_at": "2026-11-11T04:50:46.597706",
     "status": "skipped",
     "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/12/elon-musk-jensen-huang-nvidia-tesla.html",
+    "processed_at": "2026-11-12T05:49:44.567830",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/11/american-airlines-first-class-chicago-new-york.html",
+    "processed_at": "2026-11-12T05:50:22.000432",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/investingclub/2026/11/11/costco-is-giving-shareholders-a-big-early-holiday-gift-how-to-make-sure-you-get-it.html",
+    "processed_at": "2026-11-12T05:51:06.496588",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/11/jetblue-ceo-premium.html",
+    "processed_at": "2026-11-12T05:51:29.075899",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/11/us-army-soldier-russia-espionage-arrest.html",
+    "processed_at": "2026-11-12T05:51:58.874139",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/9ca8ba83-5a3c-409e-96d9-abee1323b688?syn-25a6b1a6=1",
+    "processed_at": "2026-11-12T05:52:51.624836",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/ed93bd25-3ae4-4845-ac2e-ccb6e9c741e6?syn-25a6b1a6=1",
+    "processed_at": "2026-11-12T05:52:58.897082",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/b6c31ee9-0837-4fb0-83d9-a0e70100d0a3?syn-25a6b1a6=1",
+    "processed_at": "2026-11-12T05:53:06.230489",
+    "status": "skipped",
+    "reason": "description_too_short"
   }
 ]
