@@ -1427,5 +1427,29 @@
     "processed_at": "2026-11-14T05:03:12.216627",
     "status": "skipped",
     "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/f66f9811-59a2-4e52-a944-c7ed81dabc50?syn-25a6b1a6=1",
+    "processed_at": "2026-11-15T04:56:49.105433",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/e141a5ea-5aa4-491b-88a4-369cfc67693a",
+    "processed_at": "2026-11-15T04:56:56.300774",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/9bc5e047-9993-4123-8f22-a59c5de245e9?syn-25a6b1a6=1",
+    "processed_at": "2026-11-15T04:56:56.300798",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/4aba8386-35cc-463b-a79c-a0c85c362c89?syn-25a6b1a6=1",
+    "processed_at": "2026-11-15T04:56:56.300816",
+    "status": "skipped",
+    "reason": "description_too_short"
   }
 ]
