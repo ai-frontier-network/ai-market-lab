@@ -1637,5 +1637,53 @@
     "processed_at": "2026-11-18T06:00:27.461326",
     "status": "skipped",
     "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html",
+    "processed_at": "2026-11-19T05:57:54.867832",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/19/china-south-korea-trade-deal-films-gaming.html",
+    "processed_at": "2026-11-19T05:58:41.196143",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/18/tech-outage-costco-panic-buying.html",
+    "processed_at": "2026-11-19T06:00:29.226388",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/18/nvidia-kress-jensen-huang-return.html",
+    "processed_at": "2026-11-19T06:00:29.226433",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/18/jeffries-house-speaker-congress.html",
+    "processed_at": "2026-11-19T06:00:29.226448",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/18/nvidia-stock-earnings.html",
+    "processed_at": "2026-11-19T06:00:52.286840",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/62c0510b-ca65-441e-9baf-675b93903b9e?syn-25a6b1a6=1",
+    "processed_at": "2026-11-19T06:01:00.494520",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/9450175e-3da3-4df3-bd93-050683bbb98a?syn-25a6b1a6=1",
+    "processed_at": "2026-11-19T06:01:29.921604",
+    "status": "skipped",
+    "reason": "description_too_short"
   }
 ]
