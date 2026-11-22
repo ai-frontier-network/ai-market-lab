@@ -1799,5 +1799,35 @@
     "processed_at": "2026-11-21T05:45:45.203615",
     "status": "skipped",
     "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/21/trump-fbi-database-hack.html",
+    "processed_at": "2026-11-22T05:10:03.360189",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/21/us-airlines-first-class-business-class.html",
+    "processed_at": "2026-11-22T05:10:18.964571",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/21/china-xi-trump-putin-global-diplomacy-shenzhen.html",
+    "processed_at": "2026-11-22T05:10:33.669965",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/investingclub/2026/11/21/during-wall-streets-worst-week-in-over-a-year-we-put-money-to-work-what-were-buying.html",
+    "processed_at": "2026-11-22T05:11:10.737105",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/dc7749dc-0f40-44a6-80bc-7f747d383616?syn-25a6b1a6=1",
+    "processed_at": "2026-11-22T05:12:53.866760",
+    "status": "skipped",
+    "reason": "description_too_short"
   }
 ]
