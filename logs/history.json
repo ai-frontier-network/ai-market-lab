@@ -1961,5 +1961,47 @@
     "processed_at": "2026-11-24T08:31:46.842166",
     "status": "skipped",
     "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/24/gold-is-doing-something-strange-heres-one-way-to-play-it-.html",
+    "processed_at": "2026-11-25T07:05:57.091561",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/24/anthropic-stock-ipo-price.html",
+    "processed_at": "2026-11-25T07:06:04.669120",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/24/kalshi-perps-volume-prediction-markets.html",
+    "processed_at": "2026-11-25T07:06:34.466058",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/c72a8e34-13c2-4336-90b1-e59bac95c78b?syn-25a6b1a6=1",
+    "processed_at": "2026-11-25T07:07:04.353621",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/705eb84c-801d-4a96-b908-e366511e886a?syn-25a6b1a6=1",
+    "processed_at": "2026-11-25T07:07:11.563259",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/cd1831d0-c3f1-4705-b8e2-badfb5e39764?syn-25a6b1a6=1",
+    "processed_at": "2026-11-25T07:07:25.972752",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/e5df32d1-1801-4d81-b2f5-b83e93377c1c?syn-25a6b1a6=1",
+    "processed_at": "2026-11-25T07:07:25.972796",
+    "status": "skipped",
+    "reason": "description_too_short"
   }
 ]
