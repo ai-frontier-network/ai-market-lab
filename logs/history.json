@@ -2003,5 +2003,41 @@
     "processed_at": "2026-11-25T07:07:25.972796",
     "status": "skipped",
     "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/investingclub/2026/11/25/were-buying-more-of-a-stock-down-big-from-its-july-highs.html",
+    "processed_at": "2026-11-26T06:58:52.004623",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/7838a715-07d4-4605-aa60-21f5af2b2370?syn-25a6b1a6=1",
+    "processed_at": "2026-11-26T06:59:00.889349",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/368c4526-a0ce-4951-a847-f039af2a51af?syn-25a6b1a6=1",
+    "processed_at": "2026-11-26T06:59:00.889373",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/cd688a72-04ed-40fb-9c26-5cae522a0abd",
+    "processed_at": "2026-11-26T06:59:00.889386",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/6e217409-9fbb-456c-b405-2eb15bb69679",
+    "processed_at": "2026-11-26T06:59:29.797285",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/325b93d6-bc2e-4dd3-9941-cf4688aca11d?syn-25a6b1a6=1",
+    "processed_at": "2026-11-26T06:59:44.167044",
+    "status": "skipped",
+    "reason": "description_too_short"
   }
 ]
