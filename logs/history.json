@@ -2039,5 +2039,23 @@
     "processed_at": "2026-11-26T06:59:44.167044",
     "status": "skipped",
     "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/8c5e0298-58f0-47e9-a843-513178d9fa2e?syn-25a6b1a6=1",
+    "processed_at": "2026-11-27T06:52:15.424761",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/fedc6392-ad25-43e4-9d9f-20216cbf331e?syn-25a6b1a6=1",
+    "processed_at": "2026-11-27T06:52:15.424791",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/71ffa69f-2a07-44e4-8305-ae5548b89828?syn-25a6b1a6=1",
+    "processed_at": "2026-11-27T06:52:30.196788",
+    "status": "skipped",
+    "reason": "description_too_short"
   }
 ]
