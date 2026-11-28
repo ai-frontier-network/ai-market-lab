@@ -2057,5 +2057,53 @@
     "processed_at": "2026-11-27T06:52:30.196788",
     "status": "skipped",
     "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/27/tech-download-jensen-huang-ai-market.html",
+    "processed_at": "2026-11-28T06:24:09.305189",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/27/sap-job-cuts-ai-restructuring.html",
+    "processed_at": "2026-11-28T06:24:55.738330",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/27/rheinmetall-stock-cmd-guidance-sales.html",
+    "processed_at": "2026-11-28T06:24:55.738354",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/c9de05b8-0916-436a-87fc-40337067b0d2?syn-25a6b1a6=1",
+    "processed_at": "2026-11-28T06:26:22.778102",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/322f3ecd-f513-45aa-9b2f-adf63e104638?syn-25a6b1a6=1",
+    "processed_at": "2026-11-28T06:26:22.778123",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/f9c4da80-cc2c-4b0b-b083-b7acd0337790?syn-25a6b1a6=1",
+    "processed_at": "2026-11-28T06:26:30.065039",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/57795d58-2b9e-45cb-81e3-6c63aee434a4?syn-25a6b1a6=1",
+    "processed_at": "2026-11-28T06:26:30.065061",
+    "status": "skipped",
+    "reason": "description_too_short"
+  },
+  {
+    "url": "https://www.ft.com/content/839c7d2c-adad-4e70-9abd-3cd5bdf5e09e?syn-25a6b1a6=1",
+    "processed_at": "2026-11-28T06:26:30.065074",
+    "status": "skipped",
+    "reason": "description_too_short"
   }
 ]
